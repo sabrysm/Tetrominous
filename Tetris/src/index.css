@@ -1,0 +1,363 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(56, 59, 90)
+}
+
+@font-face {
+  font-family: 'Pixel';
+  src: url('font/Pixel-LCD-7.woff') format('woff');
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+/* Footer.js styling */
+.footer {
+  height: 7rem;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222728;
+}
+/* TodoApp.js styling */
+.todos-list {
+  position: relative;
+  padding-left: 0;
+  margin: 1em;
+  border: 1px solid rgb(228, 225, 225);
+  border-radius: 0.5em;
+  width: 20em;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+.todos-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.todos-checkbox {
+  position: relative;
+  height: 2em;
+  margin-right: 1em;
+}
+
+fieldset {
+  background-color: #363d4d;
+}
+
+legend {
+  color: rgb(236, 240, 240);
+  font-weight: 400;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.todosInput {
+  height: 2em;
+  width: 5em;
+  background-color: rgb(107, 121, 138);
+  color: #fff;
+  border: 0.2em;
+  border-radius: 0.3em;
+  margin: 0 0.6em;
+}
+
+.TodoApp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.todos-checkbox label {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 1.6em;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1.6em;
+}
+
+.todos-checkbox label:after {
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 6px;
+  left: 7px;
+  opacity: 0;
+  position: absolute;
+  top: 8px;
+  transform: rotate(-45deg);
+  width: 12px;
+}
+
+.todos-checkbox input {
+  visibility: hidden;
+}
+
+.todos-checkbox input:checked + label {
+  background-color: #668ebb;
+  border-color: #668ebb;
+}
+
+.todos-checkbox input:checked + label:after {
+  opacity: 1;
+}
+
+.todoApp-with-tasksDone {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #282c34;
+  border-radius: 0.5em;
+  background-color: #282c34;
+  width: max-content;
+}
+.listStyle {
+  list-style: numbers;
+}
+
+.TasksDone {
+  top: 2.4rem;
+  height: fit-content;
+  position: relative;
+  padding-left: 0;
+  margin: 1em;
+  border: 1px solid rgb(228, 225, 225);
+  border-radius: 0.5em;
+  width: 20em;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.TasksDone-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+/* Navbar.js styling*/
+
+.Navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(56, 59, 90);
+  color: #fff;
+  gap: 2em;
+  padding: 0 4em;
+  font-weight: 200;
+}
+
+.PanelList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+}
+
+
+#logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: fit-content;
+}
+
+#logo {
+  display: block;
+  font-family: "Rosmatika";
+  font-weight: 600;
+  font-size: larger;
+  color: #fff;
+  background-color: rgb(56, 59, 90);
+  border: none;
+  max-width: fit-content;
+}
+
+#logo:focus {
+  outline: 0;
+  cursor: pointer;
+  outline-color: rgb(56, 59, 90);
+  background-color: rgb(56, 59, 90);
+}
+.icon {
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+#logo-container:hover {
+  cursor: pointer;
+  color: green;
+}
+
+#logo:hover {
+  cursor: pointer;
+  width: 6rem;
+  color: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  padding-bottom: 12px;
+  border-bottom: 2px solid rgb(242, 242, 5);
+}
+
+/* ShowCase.js styling */
+
+.ShowCase {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 3rem;
+}
+
+.app-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-right: 2em;
+}
+.app-title {
+  font-size: x-large;
+  color: rgb(172, 207, 239);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 680;
+}
+
+.app-description {
+  font-size: normal;
+  color: aliceblue;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 280;
+  max-width: 22rem;
+}
+
+/* Introduction.js styling */
+
+.Intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.Intro-header {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  font-size: 5em;
+}
+
+.Intro-span {
+  font-family: inherit;
+  color: #782709;
+}
+
+.Intro-description {
+  color: #fff;
+
+}
+
+.Intro-container h5 {
+  color: #fff;
+}
+
+.Intro-buttons button {
+  margin: 0 1em;
+  border: 0.1em solid #668ebb;
+  border-radius: 0.3em;
+  background-color: #668ebb;
+  height: 3em;
+  width: 10em;
+  color: #fff;
+}
+
+.Intro-buttons button:hover {
+  cursor: pointer;
+}
+
+/* JazrAlkalima.js styling */
+
+.Jazr-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border: 1px solid black;
+  border-radius: 0.5em;
+  background-color: #2B4151;
+  width: max-content;
+}
+.Jazr-container legend {
+  border: #ffffff;
+  margin: 0 auto 2rem auto;
+  color: #fff;
+  font-size: x-large;
+}
+
+.Jazr-container label {
+  color: #fff;
+  margin-right: 1rem;
+  direction: rtl;
+}
+
+.Jazr-container input[type="text"] {
+  background-color: #222728;
+  border: 1px solid #222728;
+  border-radius: 4px;
+  margin-right: 1rem;
+  height: 1.5rem;
+  width: 6rem;
+  color: #fff;
+  direction: rtl;
+}
+
+.Jazr-search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Jazr-result {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
