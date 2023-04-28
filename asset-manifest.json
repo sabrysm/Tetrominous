@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Tetrominous/static/css/main.4bdae2b7.css",
+    "main.js": "/Tetrominous/static/js/main.ab6fd92f.js",
+    "static/js/787.0ef42b96.chunk.js": "/Tetrominous/static/js/787.0ef42b96.chunk.js",
+    "static/media/bg.png": "/Tetrominous/static/media/bg.d63cfd51f1a63591fdd7.png",
+    "static/media/Prequisites.png": "/Tetrominous/static/media/Prequisites.3aca72a2b0e718bb305f.png",
+    "static/media/Pixel-LCD-7.woff": "/Tetrominous/static/media/Pixel-LCD-7.63d9c15192fdeab6d3a6.woff",
+    "index.html": "/Tetrominous/index.html",
+    "main.4bdae2b7.css.map": "/Tetrominous/static/css/main.4bdae2b7.css.map",
+    "main.ab6fd92f.js.map": "/Tetrominous/static/js/main.ab6fd92f.js.map",
+    "787.0ef42b96.chunk.js.map": "/Tetrominous/static/js/787.0ef42b96.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4bdae2b7.css",
+    "static/js/main.ab6fd92f.js"
+  ]
+}
